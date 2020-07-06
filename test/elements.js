@@ -96,9 +96,4 @@ describe('Complex Counter App', function () {
         })
     });
 });
-it('TC-015 Add Counter = ADD COUNTER', function () {
-    const actual = $(selectorGen.addCounterBtn).getText();
-    expect(actual).toEqual(expectedGen.addCounterBtn);
-})
-});
-});
+
