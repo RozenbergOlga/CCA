@@ -42,6 +42,7 @@ describe('Complex Counter App', function () {
             expect(actual).toEqual(true);
         })
     });
+
     describe('Elements value', function () {
         it('TC-009 Header = Counter', function () {
             const actual = $(selectorGen.header).getText();
@@ -85,12 +86,10 @@ describe('Complex Counter App', function () {
             const actual = $(selectorCnt.lowerLimitField).isDisplayed();
             expect(actual).toEqual(true);
         })
-
         it('TC-019 ULF', function () {
             const actual = $(selectorCnt.upperLimitField).isDisplayed();
             expect(actual).toEqual(true);
         })
-
         it('TC-020, TC-021 Default Sub and Add Buttons', function () {
             const actual = $$(selectorCnt.blackBtn).filter(el => el.isDisplayed()).length;
             const expected = 6;
