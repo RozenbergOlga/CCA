@@ -37,6 +37,7 @@ describe('Complex Counter App', function () {
             //$$('label')[$$('label').length-1]
             expect(actual).toEqual(true);
         })
+
         it('TC-008 Add Counter', function () {
             const actual = $(selectorGen.addCounterBtn).isDisplayed();
             expect(actual).toEqual(true);
@@ -44,6 +45,7 @@ describe('Complex Counter App', function () {
     });
 
     describe('Elements value', function () {
+
         it('TC-009 Header = Counter', function () {
             const actual = $(selectorGen.header).getText();
             expect(actual).toEqual(expectedGen.header);
