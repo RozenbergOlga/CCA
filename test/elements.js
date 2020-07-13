@@ -32,6 +32,7 @@ describe('Complex Counter App', function () {
             const actual = $(selectorGen.defaultValueField).isDisplayed();
             expect(actual).toEqual(true);
         })
+
         it('TC-007 Label for Default Value Field', function () {
             const actual = $$(selectorGen.defaultValueFieldLabel)[$$(selectorGen.defaultValueFieldLabel).length-1].isDisplayed();
             //$$('label')[$$('label').length-1]
@@ -45,7 +46,6 @@ describe('Complex Counter App', function () {
     });
 
     describe('Elements value', function () {
-
         it('TC-009 Header = Counter', function () {
             const actual = $(selectorGen.header).getText();
             expect(actual).toEqual(expectedGen.header);
