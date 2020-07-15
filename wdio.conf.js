@@ -47,6 +47,7 @@ exports.config = {
     // Sauce Labs platform configurator - a great tool to configure your capabilities:
     // https://docs.saucelabs.com/reference/platforms-configurator
     //
+
     capabilities: [{
 
 
@@ -61,6 +62,7 @@ exports.config = {
         // excludeDriverLogs: ['*'], // pass '*' to exclude all driver session logs
         // excludeDriverLogs: ['bugreport', 'server'],
     }],
+
     //
     // ===================
     // Test Configurations
@@ -92,9 +94,11 @@ exports.config = {
     // with `/`, the base url gets prepended, not including the path portion of your baseUrl.
     // If your `url` parameter starts without a scheme or `/` (like `some/path`), the base url
     // gets prepended directly.
+
     baseUrl: ' https://likejean.github.io/homework-5/',
     //
     // Default timeout for all waitFor* commands.
+
     waitforTimeout: 10000,
     //
     // Default timeout in milliseconds for request
