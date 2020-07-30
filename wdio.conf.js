@@ -20,6 +20,7 @@ exports.config = {
     //
 
     specs: [
+
         './test/*.js'
     ],
     // Patterns to exclude.
@@ -44,6 +45,7 @@ exports.config = {
     // and 30 processes will get spawned. The property handles how many capabilities
     // from the same test should run tests.
     //
+
     maxInstances: 1,
 
     //
