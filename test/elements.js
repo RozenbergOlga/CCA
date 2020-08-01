@@ -69,6 +69,7 @@ describe('Complex Counter App', function () {
             const actual = $(selectorGen.addNameField).getValue();
             expect(actual).toEqual(expectedGen.addNameField);
         })
+
         it('TC-013 Label for Default Value Field = Enter Initial Count:', function () {
             const actual = $$(selectorGen.defaultValueFieldLabel)[$$(selectorGen.defaultValueFieldLabel).length-1].getText();
             expect(actual).toEqual(expectedGen.defaultValueFieldLabel);
@@ -83,6 +84,7 @@ describe('Complex Counter App', function () {
             const actual = $(selectorGen.addCounterBtn).getText();
             expect(actual).toEqual(expectedGen.addCounterBtn);
         })
+
     });
     describe('Default Counter Elements exist', function () {
         it('TC-016 Counter Name', function () {
@@ -111,6 +113,8 @@ describe('Complex Counter App', function () {
             const expected = 6;
             expect(actual).toEqual(expected);
         })
+
     });
+
 });
 
