@@ -23,12 +23,14 @@ exports.config = {
 
         './test/*.js'
     ],
+
     // Patterns to exclude.
 
     exclude: [
 
         // 'path/to/excluded/files'
     ],
+
     //
     // ============
     // Capabilities
