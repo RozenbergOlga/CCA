@@ -1,4 +1,5 @@
 exports.config = {
+
     //
     // ====================
     // Runner Configuration
@@ -21,7 +22,9 @@ exports.config = {
 
     specs: [
 
+
         './test/*.js'
+
     ],
 
     // Patterns to exclude.
