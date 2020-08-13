@@ -5,11 +5,12 @@ exports.config = {
     // Runner Configuration
     // ====================
     //
+
+
     // WebdriverIO allows it to run your tests in arbitrary locations (e.g. locally or
+
     // on a remote machine).
-
     runner: 'local',
-
     //
     // ==================
     // Specify Test Files
@@ -21,7 +22,6 @@ exports.config = {
     //
     specs: [
         './test/*.js'
-
     ],
     // Patterns to exclude.
     exclude: [
