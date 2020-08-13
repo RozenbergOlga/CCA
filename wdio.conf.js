@@ -21,9 +21,11 @@ exports.config = {
     //
     specs: [
         './test/*.js'
+
     ],
     // Patterns to exclude.
     exclude: [
+
         // 'path/to/excluded/files'
     ],
     //
@@ -43,6 +45,7 @@ exports.config = {
     // from the same test should run tests.
     //
     maxInstances: 1,
+
     //
     // If you have trouble getting all important capabilities together, check out the
     // Sauce Labs platform configurator - a great tool to configure your capabilities:
