@@ -83,18 +83,22 @@ describe('Complex Counter App', function () {
             const actual = $$(selectorCnt.counterName)[1].isDisplayed();
             expect(actual).toEqual(true);
         })
+
         it('TC-017 Count Value', function () {
             const actual = $(selectorCnt.countValue).isDisplayed();
             expect(actual).toEqual(true);
         })
+
         it('TC-018 LLF', function () {
             const actual = $(selectorCnt.lowerLimitField).isDisplayed();
             expect(actual).toEqual(true);
         })
+
         it('TC-019 ULF', function () {
             const actual = $(selectorCnt.upperLimitField).isDisplayed();
             expect(actual).toEqual(true);
         })
+
         it('TC-020, TC-021 Default Sub and Add Buttons', function () {
             const actual = $$(selectorCnt.blackBtn).filter(el => el.isDisplayed()).length;
             const expected = 6;
