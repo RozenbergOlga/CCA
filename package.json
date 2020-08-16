@@ -12,7 +12,6 @@
     "clean": "rm -rf allure-results"
 
   },
-
   "keywords": [],
   "author": "",
   "license": "ISC",
@@ -24,7 +23,6 @@
     "@wdio/cli": "^6.1.22",
     "chai": "^4.2.0",
     "webdriverio": "^6.1.22",
-
   },
 
   "devDependencies": {
