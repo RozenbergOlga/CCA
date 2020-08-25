@@ -6,11 +6,13 @@ const expectedGen = require ('./../data/expected.json').general;
 const selectorCnt = require ('../data/selectors.json').counter;
 
 describe('Complex Counter App', function () {
+
     describe('Getting to the page', function () {
         it('TC-001 Page title is Complex Counter App', function () {
             browser.url('');
             const title = browser.getTitle();
             expect(title).toEqual('Complex Counter App');
+
         })
     });
 
