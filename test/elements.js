@@ -89,6 +89,7 @@ describe('Complex Counter App', function () {
             const actual = $(selectorCnt.countValue).isDisplayed();
             expect(actual).toEqual(true);
         })
+
         it('TC-018 LLF', function () {
             const actual = $(selectorCnt.lowerLimitField).isDisplayed();
             expect(actual).toEqual(true);
@@ -96,6 +97,7 @@ describe('Complex Counter App', function () {
         it('TC-019 ULF', function () {
             const actual = $(selectorCnt.upperLimitField).isDisplayed();
             expect(actual).toEqual(true);
+
         })
         it('TC-020, TC-021 Default Sub and Add Buttons', function () {
             const actual = $$(selectorCnt.blackBtn).filter(el => el.isDisplayed()).length;
