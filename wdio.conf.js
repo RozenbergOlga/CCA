@@ -122,20 +122,26 @@ exports.config = {
 
     //
     // Default request retries count
+
     connectionRetryCount: 3,
+
     //
     // Test runner services
     // Services take over a specific job you don't want to take care of. They enhance
     // your test setup with almost no effort. Unlike plugins, they don't add new
     // commands. Instead, they hook themselves up into the test process.
+
     services: ['selenium-standalone'],
+
     // Framework you want to run your specs with.
     // The following are supported: Mocha, Jasmine, and Cucumber
     // see also: https://webdriver.io/docs/frameworks.html
     //
     // Make sure you have the wdio adapter package for the specific framework installed
     // before running any tests.
+
     framework: 'mocha',
+
     //
     // The number of times to retry the entire specfile when it fails as a whole
     // specFileRetries: 1,
@@ -146,14 +152,18 @@ exports.config = {
     // Test reporter for stdout.
     // The only one supported by default is 'dot'
     // see also: https://webdriver.io/docs/dot-reporter.html
+
     reporters: ['spec','dot',['allure', {outputDir: 'allure-results'}]],
+
     //
     // Options to be passed to Mocha.
     // See the full list at http://mochajs.org/
+
     mochaOpts: {
         ui: 'bdd',
         timeout: 60000
     },
+
     //
     // =====
     // Hooks
