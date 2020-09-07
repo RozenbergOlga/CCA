@@ -245,6 +245,7 @@ exports.config = {
     /**
      * Function to be executed after a test (in Mocha/Jasmine).
      */
+
     afterTest: function(test, context, { error, result, duration, passed, retries }) {
         if (!passed) {
             browser.takeScreenshot();
@@ -294,6 +295,7 @@ exports.config = {
      */
     // onComplete: function(exitCode, config, capabilities, results) {
     // },
+
     /**
      * Gets executed when a refresh happens.
      * @param {String} oldSessionId session ID of the old session
