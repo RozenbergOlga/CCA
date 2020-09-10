@@ -138,31 +138,12 @@ exports.config = {
 
     services: ['selenium-standalone'],
 
-    // Framework you want to run your specs with.
-    // The following are supported: Mocha, Jasmine, and Cucumber
-    // see also: https://webdriver.io/docs/frameworks.html
-    //
-    // Make sure you have the wdio adapter package for the specific framework installed
-    // before running any tests.
 
     framework: 'mocha',
 
-    //
-    // The number of times to retry the entire specfile when it fails as a whole
-    // specFileRetries: 1,
-    //
-    // Whether or not retried specfiles should be retried immediately or deferred to the end of the queue
-    // specFileRetriesDeferred: false,
-    //
-    // Test reporter for stdout.
-    // The only one supported by default is 'dot'
-    // see also: https://webdriver.io/docs/dot-reporter.html
 
     reporters: ['spec','dot',['allure', {outputDir: 'allure-results'}]],
 
-    //
-    // Options to be passed to Mocha.
-    // See the full list at http://mochajs.org/
 
     mochaOpts: {
         ui: 'bdd',
