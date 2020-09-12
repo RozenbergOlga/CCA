@@ -10,7 +10,6 @@ describe('Default counter functionality', function () {
             const countValue = $('.badge').getText();
             expect(countValue).toEqual('-1');
         })
-
         it('TC-022 Add 3 gives 2', function () {
             browser.pause(2000);
             const button = $$('.btn-black')[5];
@@ -18,5 +17,6 @@ describe('Default counter functionality', function () {
             const countValue = $('.badge').getText();
             expect(countValue).toEqual('2');
         })
+
     });
 });
