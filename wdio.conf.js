@@ -6,12 +6,19 @@ exports.config = {
     ],
 
     exclude: [
+
         ],
+
     maxInstances: 1,
+
     capabilities: [{
+
         maxInstances: 5,
+
         browserName: 'chrome',
+
         xcludeDriverLogs: ['bugreport', 'server'],
+
     }],
 
     logLevel: 'info',
