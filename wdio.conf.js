@@ -1,7 +1,11 @@
 exports.config = {
+
     runner: 'local',
+
     specs: [
+
         './test/*.js'
+
     ],
     exclude: [
         ],
