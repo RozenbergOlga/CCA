@@ -1,11 +1,8 @@
 exports.config = {
 
     runner: 'local',
-
     specs: [
-
         './test/*.js'
-
     ],
     exclude: [
         ],
@@ -15,7 +12,6 @@ exports.config = {
         browserName: 'chrome',
         xcludeDriverLogs: ['bugreport', 'server'],
     }],
-
     logLevel: 'info',
     bail: 0,
     baseUrl: ' https://likejean.github.io/homework-5/',
@@ -29,7 +25,6 @@ exports.config = {
         ui: 'bdd',
         timeout: 60000
     },
-
     afterTest: function(test, context, { error, result, duration, passed, retries }) {
 
         if (!passed) {
