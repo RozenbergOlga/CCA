@@ -23,34 +23,28 @@ describe('Complex Counter App', function () {
             const actual = $(selectorGen.header).isDisplayed();
             expect(actual).toEqual(true);
         })
-
         it('TC-003 Total Result', function () {
             const actual = $(selectorGen.totalResult).isDisplayed();
             expect(actual).toEqual(true);
         })
-
         it('TC-004 Add Name Field', function () {
             const actual = $(selectorGen.addNameField).isDisplayed();
             expect(actual).toEqual(true);
         })
-
         it('TC-005 Label for Add Name Field', function () {
             const actual = $$(selectorGen.addNameFieldLabel)[$$(selectorGen.addNameFieldLabel).length-2].isDisplayed();
             //$$('label')[$$('label').length-2]
             expect(actual).toEqual(true);
         })
-
         it('TC-006 Default Value Field', function () {
             const actual = $(selectorGen.defaultValueField).isDisplayed();
             expect(actual).toEqual(true);
         })
-
         it('TC-007 Label for Default Value Field', function () {
             const actual = $$(selectorGen.defaultValueFieldLabel)[$$(selectorGen.defaultValueFieldLabel).length-1].isDisplayed();
             //$$('label')[$$('label').length-1]
             expect(actual).toEqual(true);
         })
-
         it('TC-008 Add Counter', function () {
             const actual = $(selectorGen.addCounterBtn).isDisplayed();
             expect(actual).toEqual(true);
