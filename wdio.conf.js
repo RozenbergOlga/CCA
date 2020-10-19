@@ -4,6 +4,7 @@ exports.config = {
     specs: [
         './test/*.js'
     ],
+
     exclude: [
         ],
     maxInstances: 1,
@@ -11,6 +12,7 @@ exports.config = {
         maxInstances: 5,
         browserName: 'chrome',
         xcludeDriverLogs: ['bugreport', 'server'],
+
     }],
     logLevel: 'info',
     bail: 0,
@@ -25,6 +27,7 @@ exports.config = {
         ui: 'bdd',
         timeout: 60000
     },
+
     afterTest: function(test, context, { error, result, duration, passed, retries }) {
 
         if (!passed) {
