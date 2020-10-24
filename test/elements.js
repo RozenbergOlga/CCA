@@ -1,6 +1,8 @@
 
 const selectorGen = require ('../data/selectors.json').general;
+
 const expectedGen = require ('./../data/expected.json').general;
+
 const selectorCnt = require ('../data/selectors.json').counter;
 
 describe('Complex Counter App', function () {
